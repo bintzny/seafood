@@ -1,0 +1,1 @@
+@extends('layouts.fontend-new')
