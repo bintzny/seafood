@@ -33,11 +33,7 @@ Route::group(['middleware' => 'auth'], function() {
         'uses' => 'fontend\ProductController@cartRemoveItem',
         'as' => 'product.cartRemoveItem'
     ]);
-
-    Route::get('/cart-remove/{id}', [
-        'uses' => 'fontend\ProductController@cartRemoveItem',
-        'as' => 'product.cartRemoveItem'
-    ]);
+    
 
     Route::get('/cart-delete/{id}', [
         'uses' => 'fontend\ProductController@cartDeleteItem',
